@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Understand-Programming</title>
+
+		<font color="#009cde"> <h1> Welcome to Understand JavaScript</h1> </font>
+		<font color="#D51D00"> <h2> Learn Share & Grow</h2> </font>
+
+		
+
+	</head>
+
+	<body>
+		<input type="text" id="myTextBox" />
+		<input type="submit" value="Click" onclick="myFunction()" />
+
+		<script type="text/javascript">
+			//function start
+			function myFunction() {
+				var text_value = document.getElementById('myTextBox').value;
+				if(text_value.length == 0){
+					alert('Please Enter the value')
+					return;
+				}
+				alert(text_value + ', You Enterted')
+			}
+	 
+		</script>
+	</body>
+
+</html>

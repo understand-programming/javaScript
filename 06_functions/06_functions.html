@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Understand Programming</title>
+	</head>
+	<body>		
+
+		<font color="#009cde"> <h1> Welcome to Understand JavaScript</h1> </font>
+		<font color="#D51D00"> <h2> Learn Share & Grow</h2> </font>
+		<h3> How to use Functions </h3>
+
+		<script type="text/javascript">
+
+// IMPORTANT NOTE
+// uncomment each /* block */ and execute this file in browser,
+// then comment it back and uncomment the next block and so on  
+
+
+		// simple function
+		function myFunction(){
+			alert("Hello from my function");
+		}
+		myFunction();
+
+
+
+/*
+		// function with parameters
+		function myFunction(value){
+			alert("Hello from my function and my value is " + value);
+		}
+		myFunction("awesome");
+*/
+
+
+/*
+		// function with parameters and return value
+		function myAddFunction(value1 , value2){
+			return value1 + value2
+		}
+		var value = myAddFunction(5 , 6);
+		alert(value);
+*/
+
+
+/*
+		// function with argument list example 1
+		function myAddFunction(){
+			var temp = 0;
+			for (var i = 0; i < arguments.length ; i++) {
+				temp += arguments[i];
+			}
+			return temp;
+		}
+		var value = myAddFunction(1,2,3,4,5);
+		alert(value);
+*/
+
+
+
+/*
+		// function with argument list example 2
+		function findMaximumValue() {
+		    max = 0;
+		    for (i = 0; i < arguments.length; i++) {
+		        if (arguments[i] > max) {
+		            max = arguments[i];
+		        }
+		    }
+		    return max;
+		}
+
+		var value = findMaximumValue(14, 23, 76, 25, 76, 99);
+		alert("max value is " + value);
+*/
+
+
+/*
+		// function literal
+		var addValue = function(){
+			return 2 + 2;
+		}
+		var value = addValue();
+		alert(value);
+*/
+
+
+/*
+		// Anonymous function 
+		var value = (function(value1,value2){
+			return value1 + value2;
+		})(5,3);
+		alert(value);
+*/
+
+		</script>
+
+
+
+	</body>
+</html>
